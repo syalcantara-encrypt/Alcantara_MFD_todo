@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+
+<div class="text-center">
+
+    <h1>About My Todo App</h1>
+
+    <p class="lead mt-3">
+        This is a simple Todo List application built using Django.
+    </p>
+
+</div>
+
+<div class="card p-4 mt-4">
+
+    <h2>Features</h2>
+
+    <ul>
+        <li>Add Todo</li>
+        <li>Edit Todo</li>
+        <li>Delete Todo</li>
+        <li>Mark Todo as Complete</li>
+        <li>Search Todos</li>
+        <li>Pagination</li>
+        <li>User Login and Logout</li>
+        <li>User-specific Todo Lists</li>
+    </ul>
+
+</div>
+
+<div class="card p-4 mt-4">
+
+    <h2>Django MVT</h2>
+
+    <p>
+        This application follows the Django
+        Model-View-Template (MVT) architecture.
+    </p>
+
+    <ul>
+        <li><strong>Model</strong> – Handles the Todo database.</li>
+        <li>
+            <strong>View</strong> – Handles application logic
+            and user requests.
+        </li>
+        <li>
+            <strong>Template</strong> – Handles the HTML
+            presentation of the application.
+        </li>
+    </ul>
+
+</div>
+
+<div class="text-center mt-4">
+
+    <a
+        href="{% url 'home' %}"
+        class="btn btn-primary"
+    >
+        Back to Home
+    </a>
+
+</div>
+
+{% endblock %}
